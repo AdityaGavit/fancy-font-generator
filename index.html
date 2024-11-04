@@ -11,9 +11,6 @@
   <div id="load-more">
     <button id="load-more-btn">Load More Fonts</button>
   </div>
-  <div class="footer">
-    Check Out Our Other Tool ¯\_(ツ)_/¯: <a href="https://emoticonhub.com/" target="_blank">Emoticon Hub</a>
-</div>
 </div>
 
 <script>
@@ -137,7 +134,7 @@
   ];
 
   let displayedFonts = [];
-  const fontsPerLoad = 24;
+  const fontsPerLoad = 15;
 
   function styleText(text, styleIndex) {
     return text.split('').map(char => {
@@ -310,24 +307,4 @@ p {
 #load-more-btn:hover {
   background-color: #555;
 }
-.footer {
-    text-align: center;
-    margin: 40px auto 0;
-    padding: 15px;
-    border-top: 1px solid #eee;
-    color: #666;
-    max-width: 600px;  /* Reduced from 1200px to 600px */
-}
-
-.footer a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #000;
-    text-decoration: underline;
-}  
 </style>
